@@ -1,0 +1,28 @@
+body {
+  background-color: #FFFFB2;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  animation: blink 0.5s infite;
+}
+
+img {
+  margin-top: 80px;
+  width: 500px;
+  animation: slidein 10s linear 1s infinite running;
+}
+
+@keyframes slidein {
+  from { transform: translateX(0px)); }
+  to   { transform: translateX(1500px); }
+}
+
+@keyframes blink {
+  from {color: #000;}
+  to {color: #fff;}
+}
